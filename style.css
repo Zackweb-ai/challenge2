@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+
+}
+li a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    height: 60px;
+}
+nav{
+    background-color: rgba(2,0,0,.9);
+    height: 60px;
+    font-family: 'Libre Baskerville', serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+li a:hover{
+    /* background-color: rgba(255,255,255,.5); */
+    color: rgb(255, 71, 71);
+}
+.content img{
+    float: left;
+    width: 280px;
+    height: 210px;
+    padding: 20px;
+    border-radius: 25px;
+}
+.content{
+    margin: auto;
+    width: 800px;
+    margin-top: 80px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+
+}
+.content p{
+    text-align: justify;
+}
+.text{
+    padding-top: .5px;
+}
+.wicon {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 0px;
+    transition: all 1s ease-in-out;
+}
+.wicon:hover {
+    width: 100px;
+    height: 100px;
+    transform: translateX(30px);
+
+}
+.sticky{
+   
+    background-color: rgb(228, 228, 228);
+    position: sticky;
+    top: 150px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    position: absolute;
+    top: 5px;
+    animation: 4s bigger ease-in-out ;
+}
+.top img{
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+
+}
+.top img:hover{
+    animation: 3s logo-animation ease ;
+
+}
+.menu{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.search{
+
+}
+.search input{
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.search input:focus{
+    outline: none;
+}
+.search a img{
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    margin-top: 6px;
+    top: 6px;
+    right: 300px;
+
+}
+.search input{
+    padding: 10px;
+    margin: 0;
+    border: none;
+    width: 260px;
+    height: 0px;
+    padding-top: 30px;
+    font-size: larger;
+}
+
+
+
+
+@keyframes logo-animation {
+    0% {
+        transform: rotateY(0deg);
+    }
+   
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes bigger {
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1.7;
+    }
+    100%{
+        scale: 1;
+    }
+}
